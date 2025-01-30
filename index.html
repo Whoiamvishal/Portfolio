@@ -4,117 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resume</title>
+    <title>My Resume</title>
 
     <style>
-        /* CSS styles for the table */
-        table {
-            width: 100%; /* Set table width to 100% of its container */
-            border-collapse: collapse; /* Collapse table borders */
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
-        th, td {
-            padding: 8px; /* Add padding to table cells */
-            border: 1px solid #a53535; /* Add border to table cells */
-            text-align: left; /* Align text to the left */
+        h1, h2 {
+            color: #444;
         }
 
-        th {
-            background-color: #bdb6b6; /* Background color for header cells */
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9; /* Background color for even rows */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
         }
 
         img {
             border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .center {
             text-align: center;
         }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* List Styles */
+        ol {
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #444;
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styles */
+        .toggle-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .toggle-button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 
 <body>
-    <h1>My resume</h1>
-    <img src="./mypic.jpg" width="200" height="200" alt="Description of the image">
+    <h1>My Resume</h1>
+    <img src="./mypic.jpg" width="200" height="200" alt="Vishal Awasarmol">
 
     <h2>Vishal Awasarmol</h2>
     <hr>
 
-    <h2>summry</h2>
-    
-     <div class="center">
-    <p>
-        Its my pleasure to introduce myself to you<br>
-        My name is Vishal Awasarmol. I am 22yrs old and I live in Nashik with my family.
-        I have done my Bachelors degree in Arts from Nashik University of pune. I have got experieance
-        Freelancing and Webdeveloping.<br>
+    <h2>Summary</h2>
+    <div class="center">
+        <p>
+            It's my pleasure to introduce myself to you.<br>
+            My name is Vishal Awasarmol. I am 22 years old and I live in Nashik with my family.
+            I have done my Bachelor's degree in Arts from Nashik University of Pune. I have experience
+            in freelancing and web development.<br>
 
-        My strength are, I am hard working, quick learning, self motivated and a multi tasker.
-        My hobbies are playing Football, listening music and travel in nature.
-        My short term goal is to get a job in a reputed company and my long term goal is to achieve a high position
-        in the same company.
+            My strengths are that I am hard-working, a quick learner, self-motivated, and a multi-tasker.
+            My hobbies are playing football, listening to music, and traveling in nature.
+            My short-term goal is to get a job in a reputed company, and my long-term goal is to achieve a high position
+            in the same company.
 
-        Thats all about me
-        Thank you....
-    </p>
-   </div>       
+            That's all about me.
+            Thank you....
+        </p>
+    </div>
     <hr>
 
     <h2>Education</h2>
-    <table border="1">
-    <!-- Table header -->
-    <thead>
-        <tr>
-            <th>School/University</th>
-            <th>Percentage</th>
-            <th>Passing year</th>
-        </tr>
-    </thead>
-    <!-- Table body -->
-    <tbody>
-        <!-- Table row 1 -->
-        <tr>
-            <td>10th SSC</td>
-            <td>52.60%</td>
-            <td>March 2017</td>
-        </tr>
-        <!-- Table row 2 -->
-        <tr>
-            <td>12 HSC</td>
-            <td>66.62</td>
-            <td>February 2019</td>
-        </tr>
-        <tr>
-            <td>BA(Geography)</td>
-            <td>69.62</td>
-            <td>October 2024</td>
-        </tr>
-        <!-- Add more rows as needed -->
-    </tbody>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th>School/University</th>
+                <th>Percentage</th>
+                <th>Passing Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10th SSC</td>
+                <td>52.60%</td>
+                <td>March 2017</td>
+            </tr>
+            <tr>
+                <td>12th HSC</td>
+                <td>66.62%</td>
+                <td>February 2019</td>
+            </tr>
+            <tr>
+                <td>BA (Geography)</td>
+                <td>69.62%</td>
+                <td>October 2024</td>
+            </tr>
+        </tbody>
+    </table>
     <hr>
-<h2>Work experience</h2>
-<p>I"ve no work experiences</p>
-<hr>
 
-<h2>Side skills</h2>
-<ol>
-    <li>C</li>
-    <li>C++</li>
-    <li>Java</li>
-    <li>Python</li>
-    <li>Webdeveloping</li>
-</ol>
+    <h2>Work Experience</h2>
+    <p id="workExperience">I've no work experience.</p>
+    <button class="toggle-button" onclick="toggleWorkExperience()">Toggle Work Experience</button>
+    <hr>
 
-<footer>
-   <a href="./about copy.html">About me</a>
+    <h2>Side Skills</h2>
+    <ol>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Web Development</li>
+    </ol>
 
-   <a href="./contact copy.html">Contact me</a>
-</footer>
+    <footer>
+        <a href="./about copy.html">About Me</a>
+        <a href="./contact copy.html">Contact Me</a>
+    </footer>
+
+    <script>
+        // JavaScript for interactivity
+        function toggleWorkExperience() {
+            const workExperience = document.getElementById('workExperience');
+            if (workExperience.textContent === "I've no work experience.") {
+                workExperience.textContent = "I have some freelance experience in web development.";
+            } else {
+                workExperience.textContent = "I've no work experience.";
+            }
+        }
+    </script>
 </body>
 
 </html>
